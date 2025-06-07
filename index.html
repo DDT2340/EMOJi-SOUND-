@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emoji with Sound</title>
+</head>
+<body>
+  <h2>Click on an Emoji to Hear Sound</h2>
+
+  <button onclick="playSound('laugh')">😂</button>
+  <button onclick="playSound('clap')">👏</button>
+
+  <audio id="laugh" src="sounds/laugh.mp3"></audio>
+  <audio id="clap" src="sounds/clap.mp3"></audio>
+
+  <script>
+    function playSound(id) {
+      document.getElementById(id).play();
+    }
+  </script>
+</body>
+</html>
